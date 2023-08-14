@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="top">
+        <div class="nav-left">
+            
+            <img src="./nav-left.png" alt="" style="padding: 0 0.8rem; width: 2.4rem;">
+            <img src="./youtube.png" alt="" style=" height: 1.9rem; padding-right: 0.5rem;">
+            <p style="padding-bottom: 0.2rem;">YouTube</p>
+
+        </div>
+        <div class="nav-mid">
+            <input type="text" placeholder="Search" >
+            <img src="./search.png" alt="" style="background-color: rgb(218, 212, 212); padding: 0.5rem 1rem;height: 1.4rem; opacity: 0.5;border: 2px solid rgb(191, 180, 180); border-left-style: none; border-radius: 0 0.2rem 0.2rem 0;">
+            <img src="./google-voice.png" alt="" style="padding-left: 0.5rem;">
+        </div>
+        <div class="nav-right">
+            <img src="./video-camera.png"  alt="">
+            <img src="./menu.png"  alt="">
+            <img src="./bell.png"  alt="">
+            <img src="./profile-user.png" >
+        </div>
+    </nav>
+    <main>
+        <div class="main-left">
+            <div class="sidebar">
+                <img src="./home.png" style="padding: 0.6rem 0.6rem 0.6rem 1.6rem; height: 1.4rem;">   <p>Home</p>
+            </div>
+            <div class="sidebar">
+                <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="M14 6V3c-.85.44-1.7.88-2.55 1.33-1.41.74-2.9 1.34-4.17 2.32-1.13.87-2.02 2.05-2.58 3.37-.46 1.09-.7 2.29-.7 3.48v.14C4 18.26 7.58 22 12 22s8-3.74 8-8.36V2l-6 4zm0 9.7c0 1.82-1.34 3.3-3 3.3s-3-1.47-3-3.3c0-1.19.58-2.24 1.45-2.82L14 10v5.7z"></path></svg>
+                <p>Trending</p>
+            </div>
+            <div class="sidebar" style="margin-bottom: 0.8rem;" >
+                <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                <p>Subcriptions</p>
+            </div>
+            <div class="sidebar" style="border-bottom: 1px solid rgb(203, 198, 198);  margin-bottom: 0.8rem;"></div>
+            <div class="sidebar">
+                <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                <p>Library</p>
+            </div>
+            <div class="sidebar">
+                <svg height="24" " viewBox="0 0 24 24" width="24" focusable="false"><g><path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"></path></g></svg>
+                  <p>History</p>
+            </div>
+            <div class="sidebar">
+                <svg id="svg1" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path></svg>
+                <p>Your Videos</p>
+            </div>
+            <div class="sidebar">
+                <svg height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path></svg>
+                <p>Watch Later</p>
+            </div>
+            <div class="sidebar">
+                <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" ><path d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z"></path></svg>
+                <p>Liked Videos</p>
+            </div>
+            
+        </div>
+        <div class="main-right">
+            <div class="container">
+                <div class="video">
+                    <img src="./udas-dupur.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./ami-ek-emon.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Udas Dupur Bela Shokhi || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Dream Studio</p>
+                            <p>15M Views · 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="video">
+                    <img src="./nujhumrater.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./nujhumrater.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Nijhum Rater Pori || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Dream Studio</p>
+                            <p>5M Views · 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="video">
+                    <img src="./preme-pora.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./preme-pora.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Preme Pora Baron || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Star Studio</p>
+                            <p>29M Views · 1 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./tomra-koiyo.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./tomra-koiyo.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Tomra Koiyogo Bujhaiya || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Music World</p>
+                            <p>2M Views · 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./vuliya-na.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./ami-dur.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Bondhu Vuliya na Jaiyo || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Eagle Music</p>
+                            <p>8M Views · 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="video">
+                    <img src="./ami-ek-emon.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./ami-ek-emon.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Ami Ek Emon Pakhi || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Music BD</p>
+                            <p>18M Views · 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./jepakhi.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./jepakhi.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Je Pakhi Ghar Bojhe Na || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Egal Music</p>
+                            <p>11M Views · 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./tomar-sathe.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./tomar-sathe.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Tomar Sathe Amar Mele Na || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Altaf Sayyed</p>
+                            <p>3M Views · 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./ami-dur.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./ami-dur.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Ami Dur Hote Tomarei Dekhechi || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Gream Star Studio</p>
+                            <p>4M Views · 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./kichu-din.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./kichu-din.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Kichu DIn Mone MOne || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>MAS Production</p>
+                            <p>869K Views · 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video">
+                    <img src="./monta-re.jpg" alt="">
+                </div>
+               <div class="details">
+                <div class="channel-img">
+                    <img src="./monta-re.jpg" alt="">
+                </div>
+                <div class="sub-details">
+                    <div class="v-name">
+                        <p>Monta Ree || Bengali Song</p>
+                    </div>
+                    <div class="channel-des">
+                        <p>Music India</p>
+                        <p>31M Views · 2 years ago</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            
+            <div class="container">
+                <div class="video">
+                    <img src="./ki-jala.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="channel-img">
+                        <img src="./ki-jala.jpg" alt="">
+                    </div>
+                    <div class="sub-details">
+                        <div class="v-name">
+                            <p>Ki Jala || Bengali Song</p>
+                        </div>
+                        <div class="channel-des">
+                            <p>Altaf Sayyed</p>
+                            <p>6M Views · 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
