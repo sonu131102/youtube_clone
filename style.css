@@ -223,6 +223,27 @@ svg{
 }
 
 
+@media (max-width:1350px) {
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        
+        margin-bottom: 0.6rem;
+    }
+    .sidebar img{
+        margin: 0;
+    }
+    .side-name p{
+        font-size: 0.8rem;
+        font-weight: 600;
+        opacity: 0.6;
+    }
+    svg{
+        margin: 0;
+    }
+}
+
+
 @media (max-width:955px) {
     .sidebar{
         display: flex;
@@ -277,11 +298,30 @@ svg{
 
 @media (max-width:603px) {
   
-  
+    .sidebar{
+        margin: 0;
+        padding: 0.5rem ;
+    }
     .side-name p{
         font-size: 0.8rem;
         font-weight: 600;
         opacity: 0.6;
+    }
+    .nav-l3>p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .nav-l2>img {
+        height: 1.8rem;
+    }
+    .nav-mid img {
+        height: 1.2rem;
+    }
+    .nav-right img {
+        height: 1.2rem;
+    }
+    .nav-r4 >img {
+        height: 1.2rem;
     }
     svg{
         margin: 0;
@@ -329,7 +369,7 @@ svg{
     main-left{
         flex-direction: row;
         width: 100%;
-        padding-top: 0.6rem;
+        
     }
     .container{
         width: 94%;
